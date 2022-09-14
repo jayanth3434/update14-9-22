@@ -1,0 +1,42 @@
+@use "../../scss/" as * ;
+
+.right >ul {
+    @include flex(center,space-between);
+    display: flex;
+    margin-left:300px;
+}
+li{
+    color:black;
+    flex:1;
+    padding-right: 15px;
+    font-weight:600;
+}
+j{
+    color:aqua;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    @include flex(center,space-between);
+    background-image:linear-gradient(90deg,rgb(247, 217, 222) 55%,rgb(159, 217, 236));
+}
+.header{
+    height: 100px;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:99;
+    transition:.3s ease, background-color .3s ease;
+    @include flex(center,space-between);
+}
+.logo{
+   
+    width:40px;
+    height:40px;
+}
+.right{
+    margin-left: 50%;
+}

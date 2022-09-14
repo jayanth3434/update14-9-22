@@ -1,0 +1,43 @@
+@use "../../scss/" as * ;
+
+.right >ul {
+    @include flex(center,space-between);
+    display: flex;
+}
+.right{
+    text-align: left;
+}
+li{
+    color:black;
+    flex:1;
+    padding-right: 15px;
+    font-weight:600;
+
+}
+.header2{
+    height:100px;
+}
+
+span{
+    color:black;
+}
+.container{
+    @include flex(center,space-between);
+    width:100%;
+    text-align: left;
+}
+.header{
+    height:$header-height;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:99;
+    transition:.3s ease, background-color .3s ease;
+    @include flex(center,space-between);
+}
+.logo{
+   
+    width:40px;
+    height:40px;
+}

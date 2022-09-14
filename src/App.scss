@@ -1,0 +1,246 @@
+@use "./scss/" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.hel{
+  z-index:200;
+}
+html {
+  font-size: 100%;
+
+  @include tablet{
+    font-size: 80%;
+  }
+
+  @include mobile{
+    font-size: 60%;
+  }
+}
+
+.logo1{
+  width:40px;
+  height:40px;
+  padding-left: 20px;
+}
+
+.left{
+  width:100%;
+  display:flex;
+  background-image: linear-gradient(90deg,rgb(203, 238, 250) 70%,rgb(216, 215, 215));
+}
+ul{
+  display:flex;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.soursel{
+  margin-left:20px;
+  width:90px;
+}
+span{
+  color:black;
+}
+.main-block{
+  background-color:white;
+  color:black;
+  width:73%;
+  height:auto;
+  box-shadow:0px 0px 7px 2px rgb(65, 64, 64) ;
+  margin:20px 180px;
+  border-radius: 25px;
+}
+.childnode{
+  margin-left:110px;
+}
+.deletebut{
+  margin-left:20px;
+  padding:5px;
+  width:100px;
+  font-weight: bold;
+  background-color: rgb(16, 100, 209);
+  color:white;
+  border:none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.innersec{
+  padding:30px;
+  font-weight:200;
+}
+
+table{
+  padding-top:15px;
+  border-spacing:12px;
+}
+
+select{
+  width:220px;
+  border:none;
+  background-color:transparent;
+}
+th{
+  align-items:flex-start;
+}
+td{
+  width:7%;
+  align-items: center;
+  padding: 7px;
+}
+.email{
+  width:22%;
+}
+
+.search{
+  border-color:rgb(158, 190, 209);
+  border-radius:20px;
+  height:40px;
+  width:280px;
+  margin:10px 44rem;
+  padding:7px;
+  border-width:3px;
+  font-size: medium;
+}
+
+th{
+  text-align:left;
+}
+
+.check{
+  padding-left: 15px;
+  width:4%;
+}
+
+tr{
+  padding-left:20px;
+  padding:5px;
+  width:22%;
+  background-color: rgba(185, 185, 185, 0.5);
+}
+.flex{
+  display: flex;
+  padding:15px;
+  font-size:15px;
+  font-weight:bold;
+}
+.addnodes{
+  padding:2px;
+  font-weight:bold;
+  margin-left: 15px;
+  cursor: pointer;
+}
+input > button{
+  padding-left: 20px;
+  margin-left: 20px;
+}
+label{
+  width:200px;
+  padding-left: 20px;
+}
+.select{
+  margin-left: 50px;
+}
+.wfname{
+  margin-left: 200px;
+  width:700px;
+  font-size:15px;
+  font-weight:bold;
+  padding:3px;
+  border-color:rgba(185, 185, 185, 0.5);
+  background-color: transparent;
+  border-width:1px;
+}
+.wfbut{
+  padding:6px;
+  background-color: rgb(59, 230, 230);
+  color:white;
+  border-color:transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity:0;
+  pointer-events:none;
+}
+.plus{
+  background-color:rgb(16, 100, 209);
+  width:30px;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+  border:none;
+  font-size:53px;
+  margin-left:20px;
+  margin-top:-5px;
+  cursor: pointer;
+  border-radius:4px;
+
+  animation: vibrate 0.4s ease-in-out 0s 6 forwards;
+
+  &:hover{
+    background-color:transparent;
+    color:rgb(233, 96, 96);
+  }
+}
+@keyframes vibrate {
+  0%{
+    margin-left:18.5px;
+  }
+  50%{
+    margin-left:21px;
+  }
+  100%{
+    margin-left:18.5px;
+  }
+}
+.cancelbut{
+  padding:6px;
+  background-color: rgb(209, 57, 57);
+  color:white;
+  border-radius: 20px;
+  margin-left:20px;
+  border-color:transparent;
+  cursor: pointer;
+  opacity:0%;
+  pointer-events:none;
+}
+#block2{
+  opacity:0%;
+  pointer-events:none;
+}
+#node1{
+  opacity:0;
+  pointer-events:none;
+}
+#node2{
+  opacity:0;
+  pointer-events:none;
+}
+body{
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color:white;
+  color: $txt-color;
+
+  ul{
+    list-style-type: none;
+  }
+
+  .container{
+    max-width:1660px;
+    margin: auto;
+  }
+  .mb-3{
+    margin-bottom: 3rem;
+  }
+  .mb-2{
+    margin-bottom: 2rem;
+  }
+  .section_header{
+    @include flex(center,space-between);
+    
+  }
+}
